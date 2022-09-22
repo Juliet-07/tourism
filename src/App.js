@@ -1,24 +1,15 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Medical from "./components/Medical";
-import Siteseeing from "./components/Siteseeing";
-import BusinessTrip from "./components/BusinessTrip";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Signin from "./pages/signin";
+import Signup from "./pages/signup";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <div>
-        <p>supported by</p>
-        <p>logo</p>
-        <p>logo</p>
-        <p>logo</p>
-      </div>
-      <Medical />
-      <Siteseeing />
-      <BusinessTrip />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
   );
 }
 

@@ -2,17 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Signup from "./signup";
-import Signin from "./signin";
-import Siteseeing from "./siteseeing";
+// import Signup from "./signup";
+// import Signin from "./pages/signin";
+// import Siteseeing from "./siteseeing";
+// import HotelBooking from "./hotel-booking";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
     {/* <Signup/> */}
     {/* <Signin/> */}
-    <Siteseeing/>
+    {/* <Siteseeing/> */}
+    {/* <HotelBooking /> */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

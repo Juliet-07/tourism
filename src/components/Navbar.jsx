@@ -6,6 +6,7 @@ import { FaClinicMedical, FaHotel } from "react-icons/fa";
 import { BsBriefcaseFill } from "react-icons/bs";
 import { GiAllSeeingEye } from "react-icons/gi";
 import { Button } from "@material-ui/core";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -20,7 +21,9 @@ const Navbar = () => {
     <div className="w-full flex justify-between items-center h-20 max-w-[1440px] mx-auto px-4 text-black">
       <h1 className="text-3xl font-bold">Logo.</h1>
       <ul className="hidden md:flex">
-        <li className="p-4">Home</li>
+        <li className="p-4">
+          <Link to="/">Home</Link>
+        </li>
         {/* dropdown */}
         <li className="p-4">
           <Menu as="div" className="relative inline-block text-left">
@@ -129,19 +132,21 @@ const Navbar = () => {
           </Menu>
         </li>
         <li className="p-4">Contact us</li>
-        <li className="p-4 ml-10">Login</li>
+        <li className="p-4 ml-10">
+          <Link to="/signin">Login</Link>
+        </li>
         <button className="text-white bg-[#F27B0D] rounded w-[106px] h-[48px] text-center">
           Sign up
         </button>
       </ul>
       {/* Mobile hamburger */}
       <div onClick={handleNav} className="block md:hidden">
-        {!nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       {/* Mobile Menu */}
       <div
         className={
-          !nav
+          nav
             ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 bg-white z-10"
             : "fixed left-[-100%]"
         }
