@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Explore from "../assets/explore.png";
 import Medicals from "../assets/medical.png";
 import Site from "../assets/sightseeing.png";
@@ -45,15 +46,12 @@ const LandingPage = () => {
           <p className="text-lg text-center text-slate-300 mt-4">
             Get a chance to visit a doctor on your next visit to Germany.
           </p>
-          <div className="mt-10">
-            <button
-              className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center"
-              type="button"
-            >
-              <span>Explore</span>
-              <AiOutlineArrowRight size={20} />
-            </button>
-          </div>
+          <p className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-10">
+            <span>
+              <Link to="/medicaltourism">Explore</Link>
+            </span>
+            <AiOutlineArrowRight size={20} />
+          </p>
         </div>
       </div>
       {/* Medical */}
@@ -72,15 +70,12 @@ const LandingPage = () => {
             Experience siteseeing at its best. Feel the joy of nature and
             history
           </p>
-          <div className="mt-10">
-            <button
-              className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center"
-              type="button"
-            >
-              <span>Explore</span>
-              <AiOutlineArrowRight size={20} />
-            </button>
-          </div>
+          <p className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-10">
+            <span>
+              <Link to="/siteseeing">Explore</Link>
+            </span>
+            <AiOutlineArrowRight size={20} />
+          </p>
         </div>
       </div>
       {/* Siteseeing */}
@@ -97,15 +92,10 @@ const LandingPage = () => {
         <p className="text-lg text-center text-slate-300 mt-4">
           Make your next business trip memorable
         </p>
-        <div className="mt-10">
-          <button
-            className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center"
-            type="button"
-          >
-            <span>Explore</span>
-            <AiOutlineArrowRight size={20} />
-          </button>
-        </div>
+        <p className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-10">
+          <span>Explore</span>
+          <AiOutlineArrowRight size={20} />
+        </p>
       </div>
       {/* Business Trip */}
     </div>

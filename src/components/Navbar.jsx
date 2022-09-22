@@ -112,8 +112,8 @@ const Navbar = () => {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <Link
+                        to="/hotelbooking"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -123,7 +123,7 @@ const Navbar = () => {
                       >
                         <FaHotel color="#F27B0D" size={20} />
                         <span>Hotel Booking</span>
-                      </a>
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>

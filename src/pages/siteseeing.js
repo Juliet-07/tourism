@@ -1,14 +1,15 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { AiFillStar } from "react-icons/ai";
-import Frankfurt from "./assets/frankfurt.jpg";
-import Munich from "./assets/munich.jpg";
-import Berlin from "./assets/berlin.jpg";
-import Hamburg from "./assets/hamburg.jpg";
-import Reichstag from "./assets/reichstag.jpg";
-import Marienplatz from "./assets/marienplatz.jpg";
-import Miniatur from "./assets/miniatur.jpg";
-import Cathedral from "./assets/cathedral.jpg";
+import Frankfurt from "../assets/frankfurt.jpg";
+import Munich from "../assets/munich.jpg";
+import Berlin from "../assets/berlin.jpg";
+import Hamburg from "../assets/hamburg.jpg";
+import Reichstag from "../assets/reichstag.jpg";
+import Marienplatz from "../assets/marienplatz.jpg";
+import Miniatur from "../assets/miniatur.jpg";
+import Cathedral from "../assets/cathedral.jpg";
+import Footer from "../components/Footer";
 
 const Siteseeing = () => {
   return (
@@ -179,6 +180,7 @@ const Siteseeing = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
