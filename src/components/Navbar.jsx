@@ -43,7 +43,7 @@ const Navbar = () => {
             >
               <Menu.Items className="absolute right-0 z-10 mt-2 w-[500px] h-[200px] px-[52px] py-[44px] origin-top-right rounded-md bg-white flex items-center justify-between">
                 <div className="py-1">
-                  <Menu.Item>
+                  {/* <Menu.Item>
                     {({ active }) => (
                       <p
                         className={classNames(
@@ -57,8 +57,8 @@ const Navbar = () => {
                         <span>Medical Tourism</span>
                       </p>
                     )}
-                  </Menu.Item>
-                  <Menu.Item>
+                  </Menu.Item> */}
+                  {/* <Menu.Item>
                     {({ active }) => (
                       <p
                         className={classNames(
@@ -72,7 +72,7 @@ const Navbar = () => {
                         <span>Business trip</span>
                       </p>
                     )}
-                  </Menu.Item>
+                  </Menu.Item> */}
                   <Menu.Item>
                     {({ active }) => (
                       <p
@@ -90,7 +90,7 @@ const Navbar = () => {
                   </Menu.Item>
                 </div>
                 <div className="py-1">
-                  <Menu.Item>
+                  {/* <Menu.Item>
                     {({ active }) => (
                       <p
                         className={classNames(
@@ -104,7 +104,7 @@ const Navbar = () => {
                         <span>Site Seeing</span>
                       </p>
                     )}
-                  </Menu.Item>
+                  </Menu.Item> */}
                   <Menu.Item>
                     {({ active }) => (
                       <Link
