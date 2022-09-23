@@ -12,9 +12,9 @@ import { orange } from "@material-ui/core/colors";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
 
 const styles = (theme) => ({
-  margin: {
-    margin: theme.spacing.unit,
-  },
+  // margin: {
+  //   margin: theme.spacing.unit,
+  // },
   cssLabel: {
     "&$cssFocused": {
       color: orange[900],

@@ -12,9 +12,9 @@ import { orange } from "@material-ui/core/colors";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
 
 const styles = (theme) => ({
-  margin: {
-    margin: theme.spacing.unit,
-  },
+  // margin: {
+  //   margin: theme.spacing.unit,
+  // },
   cssLabel: {
     "&$cssFocused": {
       color: orange[900],
@@ -81,7 +81,7 @@ const Signup = (props) => {
               label="First Name"
               margin="normal"
               fullWidth
-              className={classes.margin}
+              // className={classes.margin}
               InputLabelProps={{
                 classes: {
                   root: classes.cssLabel,
@@ -101,7 +101,7 @@ const Signup = (props) => {
               label="Last Name"
               margin="normal"
               fullWidth
-              className={classes.margin}
+              // className={classes.margin}
               InputLabelProps={{
                 classes: {
                   root: classes.cssLabel,
@@ -121,7 +121,7 @@ const Signup = (props) => {
               label="Email"
               margin="normal"
               fullWidth
-              className={classes.margin}
+              // className={classes.margin}
               InputLabelProps={{
                 classes: {
                   root: classes.cssLabel,
@@ -142,7 +142,7 @@ const Signup = (props) => {
               label="Password"
               margin="normal"
               fullWidth
-              className={classes.margin}
+              // className={classes.margin}
               InputLabelProps={{
                 classes: {
                   root: classes.cssLabel,

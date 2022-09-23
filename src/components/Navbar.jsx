@@ -130,9 +130,9 @@ const Navbar = () => {
         <li className="p-4 ml-10">
           <Link to="/signin">Login</Link>
         </li>
-        <button className="text-white bg-[#F27B0D] rounded w-[106px] h-[48px] text-center">
-          Sign up
-        </button>
+        <li className="p-3 text-white bg-[#F27B0D] rounded w-[106px] h-[48px] text-center">
+          <Link to="/signup">Sign up</Link>
+        </li>
       </ul>
       {/* Mobile hamburger */}
       <div onClick={handleNav} className="block md:hidden">
