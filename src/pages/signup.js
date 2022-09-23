@@ -7,7 +7,6 @@ import {
   FormControlLabel,
   Checkbox,
 } from "@material-ui/core";
-import { AiOutlineClose } from "react-icons/ai";
 import BgImg from "../assets/beautiful-night-city.jpg";
 import { orange } from "@material-ui/core/colors";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
