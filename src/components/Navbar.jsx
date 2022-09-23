@@ -1,12 +1,11 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMenu, AiFillCar } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { FaClinicMedical, FaHotel } from "react-icons/fa";
 import { BsBriefcaseFill } from "react-icons/bs";
 import { GiAllSeeingEye } from "react-icons/gi";
-import { Button } from "@material-ui/core";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -46,8 +45,7 @@ const Navbar = () => {
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <p
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -57,13 +55,12 @@ const Navbar = () => {
                       >
                         <FaClinicMedical color="#F27B0D" size={20} />
                         <span>Medical Tourism</span>
-                      </a>
+                      </p>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <p
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -73,13 +70,12 @@ const Navbar = () => {
                       >
                         <BsBriefcaseFill color="#F27B0D" size={20} />
                         <span>Business trip</span>
-                      </a>
+                      </p>
                     )}
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <p
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -89,15 +85,14 @@ const Navbar = () => {
                       >
                         <AiFillCar color="#F27B0D" size={20} />
                         <span>Car Renting</span>
-                      </a>
+                      </p>
                     )}
                   </Menu.Item>
                 </div>
                 <div className="py-1">
                   <Menu.Item>
                     {({ active }) => (
-                      <a
-                        href="#"
+                      <p
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -107,7 +102,7 @@ const Navbar = () => {
                       >
                         <GiAllSeeingEye color="#F27B0D" size={20} />
                         <span>Site Seeing</span>
-                      </a>
+                      </p>
                     )}
                   </Menu.Item>
                   <Menu.Item>
@@ -175,8 +170,7 @@ const Navbar = () => {
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <p
                           className={classNames(
                             active
                               ? "bg-gray-100 text-gray-900"
@@ -186,13 +180,12 @@ const Navbar = () => {
                         >
                           <FaClinicMedical color="#F27B0D" size={20} />
                           <span>Medical Tourism</span>
-                        </a>
+                        </p>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <p
                           className={classNames(
                             active
                               ? "bg-gray-100 text-gray-900"
@@ -202,13 +195,12 @@ const Navbar = () => {
                         >
                           <BsBriefcaseFill color="#F27B0D" size={20} />
                           <span>Business trip</span>
-                        </a>
+                        </p>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <p
                           className={classNames(
                             active
                               ? "bg-gray-100 text-gray-900"
@@ -218,15 +210,14 @@ const Navbar = () => {
                         >
                           <AiFillCar color="#F27B0D" size={20} />
                           <span>Car Renting</span>
-                        </a>
+                        </p>
                       )}
                     </Menu.Item>
                   </div>
                   <div className="py-1">
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <p
                           className={classNames(
                             active
                               ? "bg-gray-100 text-gray-900"
@@ -236,13 +227,12 @@ const Navbar = () => {
                         >
                           <GiAllSeeingEye color="#F27B0D" size={20} />
                           <span>Site Seeing</span>
-                        </a>
+                        </p>
                       )}
                     </Menu.Item>
                     <Menu.Item>
                       {({ active }) => (
-                        <a
-                          href="#"
+                        <p
                           className={classNames(
                             active
                               ? "bg-gray-100 text-gray-900"
@@ -252,7 +242,7 @@ const Navbar = () => {
                         >
                           <FaHotel color="#F27B0D" size={20} />
                           <span>Hotel Booking</span>
-                        </a>
+                        </p>
                       )}
                     </Menu.Item>
                   </div>

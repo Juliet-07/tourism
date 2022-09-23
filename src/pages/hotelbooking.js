@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 const HotelBooking = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="w-full h-[250px] bg-cover bg-center p-24 bg-[url(./assets/beautiful-night-city.jpg)] m-auto">
         <h1 className="text-white text-2xl md:text-6xl font-bold text-center md:text-left">
           Germany hotels and places to stay
