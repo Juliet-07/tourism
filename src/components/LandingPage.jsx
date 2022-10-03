@@ -10,7 +10,7 @@ const LandingPage = () => {
   return (
     <div>
       {/* Hero */}
-      <div className="bg-gradient-to-r from-[#535353] to-[#535353] w-full h-[724px] mx-auto relative flex flex-col items-center justify-center text-white">
+      <div className="bg-gradient-to-r from-[#535353] to-[#535353] w-full h-[724px] mx-auto relative flex flex-col items-center justify-center text-white mb-10">
         <img
           src={Explore}
           className="w-full h-full object-cover absolute bg-center mix-blend-overlay"
@@ -26,12 +26,14 @@ const LandingPage = () => {
         </p>
       </div>
       {/* Hero */}
-      <div>
-        <p>supported by</p>
-        <p>logo</p>
-        <p>logo</p>
-        <p>logo</p>
+      {/* <div className="w-[160px] h-[24px] font-bold text-2xl relative left-[105px] top-[70px]">
+        Supported by
       </div>
+      <div>
+        <p>logo</p>
+        <p>logo</p>
+        <p>logo</p>
+      </div> */}
       {/* Medical */}
       <div className="mb-10">
         <div className="bg-gradient-to-r from-[#535353] to-[#535353] w-full h-[724px] mx-auto relative flex flex-col items-center justify-center text-white">

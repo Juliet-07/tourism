@@ -21,7 +21,31 @@ const Siteseeing = () => {
             Places to visit in Germany
           </h1>
         </div>
-        <div>Input here</div>
+        <div className="flex items-center justify-center w-[740px] m-6">
+          <form className="max-w-sm px-4">
+            <div className="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-0 bottom-0 w-6 h-6 my-auto text-black left-3"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search cities or places"
+                className="w-[740px] py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white"
+              />
+            </div>
+          </form>
+        </div>
         <h2 className="pl-8 pt-8 font-bold text-2xl md:text-3xl">
           Popular cities
         </h2>
@@ -79,17 +103,17 @@ const Siteseeing = () => {
             </p>
           </div>
         </div>
-        <h1 className="pl-8 pt-10 font-bold text-3xl md:text-4xl">
+        <h1 className="px-8 py-10 font-bold text-3xl md:text-4xl">
           Top Attractions in Germany
         </h1>
-        <div className="m-10 p-4 grid grid-cols-2 gap-4">
-          <div className="md:w-[609px] md:h:[758px] rounded overflow-hidden shadow-lg">
+        <div className="p-4 grid grid-cols-2 gap-4">
+          <div className="md:w-[590px] md:h:[760px] rounded overflow-hidden shadow-lg">
             <img className="w-full h-[497px]" src={Reichstag} alt="/" />
             <div className="px-6 py-4">
               <h1 className="font-bold text-2xl md:text-4xl">
                 Reichstag Building
               </h1>
-              <div class="flex items-center mb-2 pt-1">
+              <div className="flex items-center mb-2 pt-1">
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
@@ -112,7 +136,7 @@ const Siteseeing = () => {
             <img className="w-full h-[497px]" src={Marienplatz} alt="/" />
             <div className="px-6 py-4">
               <h1 className="font-bold text-2xl md:text-4xl">Marienplatz</h1>
-              <div class="flex items-center mb-2 pt-1">
+              <div className="flex items-center mb-2 pt-1">
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
@@ -160,7 +184,7 @@ const Siteseeing = () => {
               <h1 className="font-bold text-2xl md:text-4xl">
                 Cologne Cathedral
               </h1>
-              <div class="flex items-center mb-2 pt-1">
+              <div className="flex items-center mb-2 pt-1">
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
