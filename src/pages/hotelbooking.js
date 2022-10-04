@@ -1,7 +1,10 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Reichstag from "../assets/reichstag.jpg";
+import BerlinWall from "../assets/berlin-wall.jpeg";
+import Brandenburg from "../assets/brandenburg.jpg";
+import { BiChevronDown } from "react-icons/bi";
 import Footer from "../components/Footer";
-import Carousel from "../components/Carousel";
 
 const HotelBooking = () => {
   return (
@@ -97,13 +100,65 @@ const HotelBooking = () => {
           </div>
         </div>
       </div>
-      {/* <div className="w-[285px] h-[39px] relative top-[60px] left-6 bg-green-500">
-        <h2 className="font-bold text-2xl md:text-3xl">Hotels near sights</h2>
-      </div> */}
-      <div className="2xl:container 2xl:mx-auto 2xl:px-0 py-3 px-10">
-        <Carousel />
+      <div className="w-[285px] relative left-6">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8">
+          Hotels near sights
+        </h2>
       </div>
-      {/* <Footer /> */}
+      <div className="p-4 grid grid-cols-3 gap-4">
+        <div className="w-[383px] h-[670px] rounded overflow-hidden shadow-lg">
+          <img className="w-full h-[383px]" src={Reichstag} alt="/" />
+          <div className="px-6 py-4">
+            <h1 className="font-bold text-2xl md:text-3xl mb-4">
+              Reichstag Building
+            </h1>
+            <p className="text-black text-[18px]">
+              Situated just north of the Brandenburg Gate, this building houses
+              the German Parliament and was the seat of the Weimar Republic
+              government until it was seized by the Nazis in 1933.
+            </p>
+            <div className="flex mt-4 text-black text-[18px]">
+              <p>Read more</p>
+              <BiChevronDown size={30} />
+            </div>
+          </div>
+        </div>
+        <div className="w-[383px] h-[670px] rounded overflow-hidden shadow-lg">
+          <img className="w-full h-[383px]" src={BerlinWall} alt="/" />
+          <div className="px-6 py-4">
+            <h1 className="font-bold text-2xl md:text-3xl mb-4">
+              Memorial of the Berlin wall
+            </h1>
+            <p className="text-black text-[18px]">
+              The Berlin Wall Memorial is the central memorial site of German
+              division located in the middle of the capital. Situated at the
+              historic site...
+            </p>
+            <div className="flex mt-4 text-black text-[18px]">
+              <p>Read more</p>
+              <BiChevronDown size={30} />
+            </div>
+          </div>
+        </div>
+        <div className="w-[383px] h-[670px] rounded overflow-hidden shadow-lg">
+          <img className="w-full h-[383px]" src={Brandenburg} alt="/" />
+          <div className="px-6 py-4">
+            <h1 className="font-bold text-2xl md:text-3xl mb-4">
+              Brandenburg Gate
+            </h1>
+            <p className="text-black text-[18px]">
+              Located in no-man's land between East and West Germany during the
+              Cold War, this famous monument, built during the 18th-century
+              reign of Friedrich Wilhelm II, has long...
+            </p>
+            <div className="flex mt-4 text-black text-[18px]">
+              <p>Read more</p>
+              <BiChevronDown size={30} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };

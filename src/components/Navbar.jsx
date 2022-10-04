@@ -75,7 +75,8 @@ const Navbar = () => {
                   </Menu.Item> */}
                   <Menu.Item>
                     {({ active }) => (
-                      <p
+                      <Link
+                        to="/carrenting"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -85,7 +86,7 @@ const Navbar = () => {
                       >
                         <AiFillCar color="#F27B0D" size={20} />
                         <span>Car Renting</span>
-                      </p>
+                      </Link>
                     )}
                   </Menu.Item>
                 </div>
