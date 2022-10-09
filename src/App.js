@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import BusinessTrip from "./pages/businesstrip";
 import Carrenting from "./pages/carrenting";
 import Home from "./pages/home";
 import HotelBooking from "./pages/hotelbooking";
@@ -15,6 +16,7 @@ function App() {
       <Route path="/signup" element={<Signup />} />
       <Route path="/siteseeing" element={<Siteseeing />} />
       <Route path="/medicaltourism" element={<MedicalTourism />} />
+      <Route path="/businesstrip" element={<BusinessTrip />} />
       <Route path="/hotelbooking" element={<HotelBooking />} />
       <Route path="/carrenting" element={<Carrenting />} />
     </Routes>

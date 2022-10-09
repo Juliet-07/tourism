@@ -95,7 +95,9 @@ const LandingPage = () => {
           Make your next business trip memorable
         </p>
         <p className="w-[150px] h-[35px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-10">
-          <span>Explore</span>
+          <span>
+            <Link to="/businesstrip">Explore</Link>
+          </span>
           <AiOutlineArrowRight size={20} />
         </p>
       </div>

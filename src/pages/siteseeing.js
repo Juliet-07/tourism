@@ -53,7 +53,7 @@ const Siteseeing = () => {
           <div className="relative">
             <img
               src={Frankfurt}
-              className="md:w-[302px] md:h-[302px] rounded"
+              className="md:w-[302px] md:h-[320px] rounded"
               alt="/"
             />
             <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
@@ -66,7 +66,7 @@ const Siteseeing = () => {
           <div className="relative">
             <img
               src={Munich}
-              className="md:w-[302px] md:h-[302px] rounded"
+              className="md:w-[302px] md:h-[320px] rounded"
               alt="/"
             />
             <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
@@ -79,7 +79,7 @@ const Siteseeing = () => {
           <div className="relative">
             <img
               src={Berlin}
-              className="md:w-[302px] md:h-[302px] rounded"
+              className="md:w-[302px] md:h-[320px] rounded"
               alt="/"
             />
             <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
@@ -92,7 +92,7 @@ const Siteseeing = () => {
           <div className="relative">
             <img
               src={Hamburg}
-              className="md:w-[302px] md:h-[302px] rounded"
+              className="md:w-[302px] md:h-[320px] rounded"
               alt="/"
             />
             <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
