@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import Logo from "../assets/logoTourism.png";
 import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMenu, AiFillCar } from "react-icons/ai";
@@ -17,8 +18,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex justify-between items-center h-20 max-w-[1440px] mx-auto px-4 text-black">
-      <h1 className="text-3xl font-bold">Logo.</h1>
+    <div className="w-full flex justify-between items-center h-20 mx-auto px-4 text-black">
+      <div className="w-[80px] h-[80px]">
+        <img src={Logo} alt="guide me" />
+      </div>
       <ul className="hidden md:flex">
         <li className="p-4">
           <Link to="/">Home</Link>
@@ -85,7 +88,7 @@ const Navbar = () => {
                         )}
                       >
                         <AiFillCar color="#F27B0D" size={20} />
-                        <span>Car Renting</span>
+                        <span>iCar Renting</span>
                       </Link>
                     )}
                   </Menu.Item>
@@ -127,6 +130,7 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </li>
+        <li className="p-4">About us</li>
         <li className="p-4">Contact us</li>
         <li className="p-4 ml-10">
           <Link to="/signin">Login</Link>
@@ -137,23 +141,25 @@ const Navbar = () => {
       </ul>
       {/* Mobile hamburger */}
       <div onClick={handleNav} className="block md:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
       {/* Mobile Menu */}
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500 bg-white z-10"
+            ? "fixed left-0 top-20 w-[378px] h-[420px] ease-in-out duration-500 bg-white z-10"
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="w-full text-2xl font-bold m-4 pt-4">Logo.</h1>
-        <ul className="mt-20 uppercase text-center">
-          <li className="p-4">Home</li>
+        {/* <div className="w-[60px] h-[60px] flex items-center justify-center">
+          <img src={Logo} alt="guide me" />
+        </div> */}
+        <ul className="">
+          <li className="p-4 ">Home</li>
           <li className="p-4">
             <Menu as="div" className="relative inline-block text-left">
-              <div>
-                <Menu.Button className="inline-flex ">
+              <div className="flex items-center justify-center">
+                <Menu.Button className="inline-flex">
                   Services
                   <BiChevronDown className="h-5 w-5" aria-hidden="true" />
                 </Menu.Button>
@@ -251,10 +257,17 @@ const Navbar = () => {
               </Transition>
             </Menu>
           </li>
+          <li className="p-4">About us</li>
           <li className="p-4">Contact us</li>
-          <li className="p-4">Login</li>
-          <li className="p-4">Sign up</li>
         </ul>
+        <div className="w-[328px] h-[50px] py-[12px] px-[14px] m-6 bg-[#f27b0d] text-center text-white font-medium">
+          {" "}
+          <Link to="/signup">Sign up</Link>
+        </div>
+        <div className="w-[328px] h-[50px] py-[12px] px-[14px] m-6 border border-[#f27b0d] text-center text-black font-medium">
+          {" "}
+          <Link to="/signin">Login</Link>
+        </div>
       </div>
     </div>
   );

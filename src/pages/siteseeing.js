@@ -16,13 +16,13 @@ const Siteseeing = () => {
     <>
       <Navbar />
       <div>
-        <div className="w-full h-[250px] bg-cover bg-center p-24 bg-[url(./assets/beautiful-night-city.jpg)] m-auto">
-          <h1 className="text-white text-3xl md:text-6xl font-bold text-center md:text-left">
+        <div className="w-full h-[92px] md:h-[250px] bg-cover bg-center bg-[url(./assets/beautiful-night-city.jpg)] m-auto flex items-center">
+          <h1 className="text-white text-2xl md:text-6xl font-bold px-6">
             Places to visit in Germany
           </h1>
         </div>
-        <div className="flex items-center justify-center w-[740px] m-6">
-          <form className="max-w-sm px-4">
+        <div className="flex items-center justify-center my-6">
+          <form className="px-4">
             <div className="relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,64 +41,64 @@ const Siteseeing = () => {
               <input
                 type="text"
                 placeholder="Search cities or places"
-                className="w-[740px] py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white"
+                className="w-[327px] md:w-[740px] py-3 pl-12 pr-4 text-gray-500 border rounded-md outline-none bg-gray-50 focus:bg-white"
               />
             </div>
           </form>
         </div>
-        <h2 className="pl-8 pt-8 font-bold text-2xl md:text-3xl">
-          Popular cities
-        </h2>
+        <div className="w-[134px] md:w-[214px] h-[24px] md:h-[39px] font-bold text-xl md:text-3xl mx-6 my-2">
+          <p>Popular cities</p>
+        </div>
         <div className="m-4 p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="relative">
             <img
               src={Frankfurt}
-              className="md:w-[302px] md:h-[320px] rounded"
+              className="w-[157px] md:w-[302px] h-[167px] md:h-[320px] rounded"
               alt="/"
             />
-            <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
+            <p className="absolute bottom-6 md:bottom-12 left-4 md:left-8 font-bold text-white text-lg md:text-3xl">
               Frankfurt
             </p>
-            <p className="absolute bottom-20 left-8 font-bold text-white text-sm">
+            <p className="absolute bottom-3 md:bottom-8 left-4 md:left-8 font-bold text-white text-sm">
               Hesse, Germany
             </p>
           </div>
           <div className="relative">
             <img
               src={Munich}
-              className="md:w-[302px] md:h-[320px] rounded"
+              className="w-[157px] md:w-[302px] h-[167px] md:h-[320px] rounded"
               alt="/"
             />
-            <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
+            <p className="absolute bottom-6 md:bottom-12 left-4 md:left-8 font-bold text-white text-lg md:text-3xl">
               Munich
             </p>
-            <p className="absolute bottom-20 left-8 font-bold text-white text-sm">
+            <p className="absolute bottom-3 md:bottom-8 left-4 md:left-8 font-bold text-white text-sm">
               Bavaria, Germany
             </p>
           </div>
           <div className="relative">
             <img
               src={Berlin}
-              className="md:w-[302px] md:h-[320px] rounded"
+              className="w-[157px] md:w-[302px] h-[167px] md:h-[320px] rounded"
               alt="/"
             />
-            <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
+            <p className="absolute bottom-6 md:bottom-12 left-4 md:left-8 font-bold text-white text-lg md:text-3xl">
               Berlin
             </p>
-            <p className="absolute bottom-20 left-8 font-bold text-white text-sm">
+            <p className="absolute bottom-3 md:bottom-8 left-4 md:left-8 font-bold text-white text-sm">
               Germany, Europe
             </p>
           </div>
           <div className="relative">
             <img
               src={Hamburg}
-              className="md:w-[302px] md:h-[320px] rounded"
+              className="w-[157px] md:w-[302px] h-[167px] md:h-[320px] rounded"
               alt="/"
             />
-            <p className="absolute bottom-24 left-8 font-bold text-white text-[32px]">
+            <p className="absolute bottom-6 md:bottom-12 left-4 md:left-8 font-bold text-white text-lg md:text-3xl">
               Hamburg
             </p>
-            <p className="absolute bottom-20 left-8 font-bold text-white text-sm">
+            <p className="absolute bottom-3 md:bottom-8 left-4 md:left-8 font-bold text-white text-sm">
               Germany, Europe
             </p>
           </div>
