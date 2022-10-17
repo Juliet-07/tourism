@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "author": "Samuel Nzekwe",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
+    "mongoose": "^6.6.5",
     "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "jest": "^29.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
