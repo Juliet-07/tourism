@@ -50,7 +50,7 @@ const LandingPage = () => {
           </div>
           <div className="w-[150px] md:w-[214px] h-[40px] md:h-[56px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-[200px] md:top-10 ml-[24px] md:ml-0 border-[#f27b0d] rounded-[4px]">
             <span>
-              <Link to="/siteseeing">Explore</Link>
+              <Link to="/medicaltourism">Explore</Link>
             </span>
             <AiOutlineArrowRight size={20} className="ml-2" />
           </div>
@@ -98,7 +98,7 @@ const LandingPage = () => {
         </div>
         <div className="w-[150px] md:w-[214px] h-[40px] md:h-[56px] bg-[#F27B0D] text-white font-bold py-2 px-4 inline-flex items-center justify-center relative top-[200px] md:top-10 ml-[24px] md:ml-0 border-[#f27b0d] rounded-[4px]">
           <span>
-            <Link to="/siteseeing">Explore</Link>
+            <Link to="/businesstrip">Explore</Link>
           </span>
           <AiOutlineArrowRight size={20} className="ml-2" />
         </div>

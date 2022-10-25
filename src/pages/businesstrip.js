@@ -13,7 +13,7 @@ const BusinessTrip = () => {
     <>
       <Navbar />
       <div>
-        <div className="w-foll h-[250px] bg-cover bg-center p-24 bg-[url(./assets/pexelphoto.png)] m-auto">
+        <div className="w-foll h-[250px] bg-cover bg-center p-24 bg-[url(./assets/ceo.png)] m-auto">
           <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
             Business trips
           </h1>
@@ -32,24 +32,27 @@ const BusinessTrip = () => {
             <p>Search</p>
           </div>
         </div>
-        <h2 className="pl-8 pt-8 mt-10 font-semibold text-2xl md:text-3xl text-center">
-          Who we are?
-        </h2>
-        <p className="text-center text-xl">
-          We are GuideMe, a company specialized in establishing companies and
-          business development;
-          <br /> we seek to provide foll support to investors and entrepreneurs
-          to help them establish their
-          <br /> businesses in Germany. By providing a foll range of services
-          that aim to provide innovative
-          <br /> solutions to guide our local and international clients and put
-          them on the right track.{" "}
-        </p>
-        <h2 className="px-8 py-8 font-semibold text-2xl md:text-3xl text-center">
-          Our Services?
-        </h2>
-        <div className="flex items-center justify-center">
-          <ol className="list-decimal p-2 text-xl w-[678px] h-[944px] mr-20">
+        <div className="md:w-[200px] md:h-[39px] font-semibold text-2xl md:text-3xl mx-6 mt-20">
+          <p>Who we are?</p>
+        </div>
+        <div className="md:w-[1105px] md:h-[116px] mx-6 mb-10">
+          <p className="font-normal md:text-2xl">
+            We are GuideMe, a company specialized in establishing companies and
+            business development;
+            <br /> we seek to provide foll support to investors and
+            entrepreneurs to help them establish their
+            <br /> businesses in Germany. By providing a foll range of services
+            that aim to provide innovative
+            <br /> solutions to guide our local and international clients and
+            put them on the right track.{" "}
+          </p>
+        </div>
+
+        <div className="md:w-[214px] md:h-[39px] font-semibold text-2xl md:text-3xl mx-6 my-4">
+          <p>Our Services?</p>
+        </div>
+        <div className="flex">
+          <ol className="list-decimal p-2 text-xl w-[678px] h-[944px] ml-10">
             <li className="mb-10">
               A service for organizing conferences and events for the company.
             </li>
@@ -93,7 +96,7 @@ const BusinessTrip = () => {
               start-up companies and contracts for all tenders.
             </li>
           </ol>
-          <div className="flex items-center justify-between relative top-2">
+          <div className="flex items-center justify-between ml-20 relative top-2">
             <img
               src={Man}
               alt="/"
@@ -102,9 +105,13 @@ const BusinessTrip = () => {
             <img src={Man1} alt="/" className="w-[210px] h-[765px]" />
           </div>
         </div>
-        <h2 className="px-8 py-8 font-semibold text-2xl md:text-3xl text-center">
-          Upcoming special offers
-        </h2>
+        <div className="flex items-center justify-between m-6">
+          <div className="w-[268px] md:w-[278px] h-[24px] md:h-[39px] font-semibold text-xl md:text-3xl">
+            <p>Book our services</p>
+          </div>
+          <div>View all</div>
+        </div>
+
         <div className="m-4 grid grid-cols-4 gap-4">
           <div className="w-[302px] h-[320px] border rounded-[30px] shadow-lg">
             <img

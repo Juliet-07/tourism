@@ -103,14 +103,18 @@ const Siteseeing = () => {
             </p>
           </div>
         </div>
-        <h1 className="px-8 py-10 font-bold text-3xl md:text-4xl">
-          Top Attractions in Germany
-        </h1>
-        <div className="p-4 grid grid-cols-2 gap-4">
-          <div className="md:w-[590px] md:h:[760px] rounded overflow-hidden shadow-lg">
-            <img className="w-full h-[497px]" src={Reichstag} alt="/" />
+        <div className="w-[268px] md:w-[589px] h-[24px] md:h-[53px] font-bold text-xl md:text-4xl mx-6 mt-20 mb-4">
+          <p>Top Attractions in Germany</p>
+        </div>
+        <div className="mx-6 grid md:grid-cols-2 gap-4">
+          <div className="w-[327px] md:w-[590px] h-[450px] md:h-[760px] rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-[230px] md:h-[497px]"
+              src={Reichstag}
+              alt="/"
+            />
             <div className="px-6 py-4">
-              <h1 className="font-bold text-2xl md:text-4xl">
+              <h1 className="font-bold text-xl md:text-4xl">
                 Reichstag Building
               </h1>
               <div className="flex items-center mb-2 pt-1">
@@ -132,10 +136,14 @@ const Siteseeing = () => {
             </div>
           </div>
           {/* 2 */}
-          <div className="md:w-[590px] md:h:[760px] rounded overflow-hidden shadow-lg">
-            <img className="w-full h-[497px]" src={Marienplatz} alt="/" />
+          <div className="w-[327px] md:w-[590px] h-[450px] md:h-[760px] rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-[230px] md:h-[497px]"
+              src={Marienplatz}
+              alt="/"
+            />
             <div className="px-6 py-4">
-              <h1 className="font-bold text-2xl md:text-4xl">Marienplatz</h1>
+              <h1 className="font-bold text-xl md:text-4xl">Marienplatz</h1>
               <div className="flex items-center mb-2 pt-1">
                 <AiFillStar size={15} color="yellow" />
                 <AiFillStar size={15} color="yellow" />
@@ -154,10 +162,14 @@ const Siteseeing = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-[590px] md:h:[760px] rounded overflow-hidden shadow-lg">
-            <img className="w-full h-[497px]" src={Miniatur} alt="/" />
+          <div className="w-[327px] md:w-[590px] h-[489px] md:h-[760px] rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-[230px] md:h-[497px]"
+              src={Miniatur}
+              alt="/"
+            />
             <div className="px-6 py-4">
-              <h1 className="font-bold text-2xl md:text-4xl">
+              <h1 className="font-bold text-xl md:text-4xl">
                 Miniatur Wunderland
               </h1>
               <div class="flex items-center mb-2 pt-1">
@@ -178,10 +190,14 @@ const Siteseeing = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-[590px] md:h:[760px] rounded overflow-hidden shadow-lg">
-            <img className="w-full h-[497px]" src={Cathedral} alt="/" />
+          <div className="w-[327px] md:w-[590px] h-[489px] md:h-[760px] rounded overflow-hidden shadow-lg">
+            <img
+              className="w-full h-[230px] md:h-[497px]"
+              src={Cathedral}
+              alt="/"
+            />
             <div className="px-6 py-4">
-              <h1 className="font-bold text-2xl md:text-4xl">
+              <h1 className="font-bold text-xl md:text-4xl">
                 Cologne Cathedral
               </h1>
               <div className="flex items-center mb-2 pt-1">
