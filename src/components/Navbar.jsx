@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import Logo from "../assets/logoTourism.png";
+import Logo from "../assets/guidemeyellow.png";
 import { Link } from "react-router-dom";
 import { Menu, Transition } from "@headlessui/react";
 import { AiOutlineClose, AiOutlineMenu, AiFillCar } from "react-icons/ai";
@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full flex justify-between items-center h-20 mx-auto px-4 text-black">
-      <div className="w-[80px] h-[80px]">
+      <div className="w-[100px] h-[100px]">
         <img src={Logo} alt="guide me" />
       </div>
       <ul className="hidden md:flex">
