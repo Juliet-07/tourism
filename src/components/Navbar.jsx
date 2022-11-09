@@ -155,7 +155,9 @@ const Navbar = () => {
           <img src={Logo} alt="guide me" />
         </div> */}
         <ul className="">
-          <li className="p-4 ">Home</li>
+          <li className="p-4">
+            <Link to="/">Home</Link>
+          </li>
           <li className="p-4">
             <Menu as="div" className="relative inline-block text-left">
               <div className="flex items-center justify-center">

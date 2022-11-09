@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Doctors from "../assets/doctors.jpg";
-import Tools from "../assets/doctors-tools.jpeg";
+import Tools from "../assets/doctors-tools.png";
 import Footer from "../components/Footer";
 
 const MedicalTourism = () => {
@@ -40,17 +40,11 @@ const MedicalTourism = () => {
             </p>
           </div>
         </div>
-        <div className="bg-red-700 w-[327px] md:w-[1250px] h-[181px] md:h-[477px] my-20 mx-10 md:mx-4">
-          {/* <img src={Tools} className="w-[1200px] h-[477px]" />
-          <div className="absolute top-[35px] left-[65px] bg-white w-[44px] h-[44px] border rounded-full text-center p-2 font-semibold">
-            <p>MF</p>
-          </div>
-          <p className="font-bold absolute top-[40px] left-[120px] text-xl">
-            Medical tourism in Germany
-          </p> */}
+        <div className="w-[327px] md:w-[1250px] h-[181px] md:h-[477px] mt-20 mb-0 md:mb-10 mx-10 md:mx-4">
+          <img src={Tools} alt="youtube-video" />
         </div>
       </div>
-      <div className="w-[327px] md:w-[970px] h-full mb-20 relative md:left-10">
+      <div className="w-[327px] md:w-[970px] h-full mb-6 md:mb-10 relative md:left-10">
         <div className="relative left-10 mb-4">
           <h2 className="font-bold text-[16px] md:text-3xl">
             Find the best in Germany with just a click
@@ -92,7 +86,7 @@ const MedicalTourism = () => {
           </li>
         </ul>
       </div>
-      <div className="bg-[#f27b0d] w-[256px] md:w-[331px] h-[39px] md:h-[43px] text-white p-3 text-[12px] font-semibold relative left-10 mb-10">
+      <div className="bg-[#f27b0d] w-[256px] md:w-[331px] h-[39px] md:h-[43px] text-white p-3 md:p-2 text-[12px] md:text-[16px] font-bold relative left-10 mb-10 border rounded-[4px]">
         Find a Specialized Hospital Treatment
       </div>
       <Footer />

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { AiFillStar } from "react-icons/ai";
+import { AiFillStar, AiFillCar } from "react-icons/ai";
+import { IoLocationSharp } from "react-icons/io5";
 import Red from "../assets/frame111.png";
 import BMW from "../assets/frame112.png";
 import Ash from "../assets/frame113.png";
@@ -14,27 +15,48 @@ const Carrenting = () => {
       <Navbar />
       <div>
         <div className="w-full h-[250px] bg-cover bg-center p-24 bg-[url(./assets/pexelphoto.png)] m-auto">
-          <h1 className="text-white text-3xl md:text-6xl font-bold text-center">
+          <h1 className="text-white text-3xl md:text-6xl font-bold">
             Best Rental Cars
           </h1>
         </div>
         <div className="flex items-center justify-center relative top-[40px]">
-          <div className="w-[396px] h-[58px] border border-[#ffc700] bg-white flex items-center">
-            <p>Enter preferred city</p>
+          <div className="w-[273px] h-[58px] border border-[#ffc700] bg-white flex items-center justify-center text-[#6f6b5d]">
+            <IoLocationSharp className="mr-4" />
+            <p>Current Location</p>
           </div>
-          <div className="w-[268px] h-[58px] border border-[#ffc700] bg-white flex items-center">
-            <p>check in, check out</p>
-          </div>
-          <div className="w-[312px] h-[58px] border border-[#ffc700] bg-white flex items-center">
-            <p>1 adult, 0 children, 1 room</p>
-          </div>
+          {/* <div className="w-[273px] h-[58px] border border-[#ffc700] bg-white flex items-center"> */}
+          <select className="w-[273px] h-[58px] border border-[#ffc700] bg-white flex items-center justify-center">
+            <option selected>Preferred car model</option>
+            <option value="US">Benz</option>
+            <option value="CA">Range Rover</option>
+            <option value="FR">Nissan</option>
+            <option value="DE">Toyota</option>
+          </select>
+          {/* </div> */}
+          <select className="w-[273px] h-[58px] border border-[#ffc700] bg-white flex items-center justify-center">
+            <option selected>Budget Range</option>
+            <option value="US">100</option>
+            <option value="CA">200</option>
+            <option value="FR">300</option>
+            <option value="DE">400</option>
+          </select>
+          <select className="w-[232px] h-[58px] border border-[#ffc700] bg-white flex items-center justify-center">
+            <option selected>Preferred date</option>
+            <option value="US">Benz</option>
+            <option value="CA">Range Rover</option>
+            <option value="FR">Nissan</option>
+            <option value="DE">Toyota</option>
+          </select>
           <div className="w-[163px] h-[58px] bg-[#f27b0d] flex items-center justify-center text-white font-bold">
             <p>Search</p>
           </div>
         </div>
-        <h2 className="pl-8 pt-8 mt-10 font-bold text-2xl md:text-3xl text-center">
-          Most demanded cars
-        </h2>
+        <div className="flex items-center justify-between mt-[200px] md:mt-10 mx-6">
+          <div className="w-[176px] md:w-[327px] h-[24px] md:h-[39px] font-semibold text-2xl md:text-3xl mt-10 mx-6">
+            Most demanded cars
+          </div>
+          <div>View all</div>
+        </div>
         <div className="m-4 p-4 grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="relative">
             <img
@@ -89,9 +111,12 @@ const Carrenting = () => {
             </p>
           </div>
         </div>
-        <h1 className="px-8 py-6 font-bold text-2xl md:text-3xl text-center">
-          Most Rated Cars
-        </h1>
+        <div className="flex items-center justify-between mt-[200px] md:mt-10 mx-6">
+          <div className="w-[176px] md:w-[243px] h-[24px] md:h-[39px] font-semibold text-2xl md:text-3xl mt-10 mx-6">
+            Most Rated Cars
+          </div>
+          <div>View all</div>
+        </div>
         <div className="m-4 grid grid-cols-2 gap-[24px]">
           <div className="md:w-[609px] md:h:[758px] rounded overflow-hidden shadow-lg">
             <img className="w-full h-[450px]" src={Rectangle} alt="/" />
