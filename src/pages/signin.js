@@ -101,6 +101,7 @@ const Signin = (props) => {
               margin="normal"
               fullWidth
               className={classes.margin}
+              type={showPassword ? "text" : "password"}
               InputLabelProps={{
                 classes: {
                   root: classes.cssLabel,
